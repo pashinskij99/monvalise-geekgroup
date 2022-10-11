@@ -1,0 +1,11 @@
+.main {
+	padding-bottom: 11.5rem;
+	&__h1 {
+		color: $color-dark-blue;
+	}
+	.wrapper-content {
+		@include respond(phone-small) {
+			display: block!important;
+		}
+	}
+}

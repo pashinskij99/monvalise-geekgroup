@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    font-size: 52%;
+  }
+  @include respond(phone) {
+    font-size: 40%;
+  }
+  @include respond(big-screen) {
+    font-size: 75%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Stolzl', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.container {
+  @include respond(screen) {
+    max-width: 1320px!important;
+  }
+}

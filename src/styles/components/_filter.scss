@@ -1,0 +1,53 @@
+.filter {
+	width: 100%;
+	&__h2 {
+		@include respond(tab-port) {
+			display: none;
+		}
+	}
+	&__btn-mobile {
+		display: none;
+		@include respond(tab-port) {
+			display: block;
+		}
+	}
+	&_active {
+		.sidebar-mobile {
+			opacity: 1;
+			visibility: visible;
+			&__body {
+				transform: translateX(0);
+			}
+		}
+	}
+	.sort {
+		&__text {
+			font-size: 1.2rem;
+			color: #5C5F60;
+			white-space: nowrap;
+			margin-right: 1rem;
+		}
+		&__select-wrapper {
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				right: 4rem;
+				top: 0;
+				width: .1rem;
+				background-color: $color-white;
+				height: 100%;
+			}
+		}
+		&__select {
+			cursor: pointer;
+			background-color: $color-lighter-gray;
+			border: none;
+			border-radius: 10rem;
+			padding: 0.8rem 3.7rem 0.8rem 1.2rem;
+			color: $color-dark-blue;
+			font-size: 1.2rem;
+			background-position: right 1.2rem center;
+		}
+	}
+}

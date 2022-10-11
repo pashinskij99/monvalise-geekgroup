@@ -1,0 +1,120 @@
+.input-price-range {
+  height: 10rem;
+  width: 25rem;
+  margin: 2.4rem auto auto;
+  .slider {
+    position: relative;
+    width: 25rem;
+    &__inputs-value {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    &__inputs-label {
+      font-weight: 350;
+      font-size: 1rem;
+      margin-top: 3.1rem;
+      color: #747778;
+    }
+    &__input {
+      font-size: 1.2rem;
+      color: #2D3132;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #C4C7C7;
+      padding: 0.3rem 0 1.3rem;
+      outline: none;
+    }
+
+    &__track,
+    &__range,
+    &__left-value,
+    &__right-value {
+      position: absolute;
+    }
+
+    &__track,
+    &__range {
+      height: .5rem;
+    }
+
+    &__track {
+      background-color: #C4C7C7;
+      width: 100%;
+      z-index: 0;
+    }
+
+    &__range {
+      background-color: #8E9192;
+      z-index: 0;
+    }
+
+    &__left-value,
+    &__right-value {
+      color: #dee2e6;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    &__left-value {
+      left: .6rem;
+    }
+
+    &__right-value {
+      right: -0.4rem;
+    }
+
+  }
+
+  .thumb,
+  .thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .thumb {
+    pointer-events: none;
+    position: absolute;
+    height: 0;
+    width: 25rem;
+    outline: none;
+  }
+
+  .thumb--zindex-3 {
+    z-index: 1;
+  }
+
+  .thumb--zindex-4 {
+    z-index: 2;
+  }
+
+  .thumb--zindex-5 {
+    z-index: 0;
+  }
+
+  .thumb::-webkit-slider-thumb {
+    border: none;
+    background-color: #5C5F60;
+    border-radius: .4rem;
+    cursor: pointer;
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-top: .4rem;
+    pointer-events: all;
+    position: relative;
+  }
+
+  .thumb::-moz-range-thumb {
+    background-color: #f1f5f7;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 .1rem .1rem #ced4da;
+    cursor: pointer;
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-top: .4rem;
+    pointer-events: all;
+    position: relative;
+  }
+}

@@ -1,0 +1,13 @@
+.product-list {
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2.4rem;
+  grid-row-gap: 2.4rem;
+  margin-bottom: 6rem;
+  @include respond(phone-medium) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include respond(phone-small) {
+    grid-template-columns: 1fr;
+  }
+}

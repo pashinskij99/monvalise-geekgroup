@@ -1,0 +1,30 @@
+.sidebar-mobile {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($color-black, 0.2);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+  &__body {
+    width: 320px;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: $color-white;
+    transform: translateX(-100%);
+    transition: all 0.4s;
+  }
+  &__header {
+    padding: 3rem;
+    button {
+      padding: 0;
+      svg {
+        transform: rotate(90deg);
+        margin-right: 1rem;
+      }
+    }
+  }
+}

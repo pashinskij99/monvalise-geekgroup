@@ -1,0 +1,49 @@
+.list-items-filter {
+	&__item {
+		width: 100%;
+		&:not(:last-child) {
+			margin-bottom: 1.2rem;
+		}
+	}
+	&__link {
+		position: relative;
+		font-weight: 350;
+		font-size: 1.4rem;
+		color: #444748;
+		padding-left: 32px;
+		transition: all .2s ease;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0.1rem;
+			left: 0;
+			width: 1.6rem;
+			height: 1.6rem;
+			border: 1px solid #d2d2d2;
+			border-radius: 4px;
+			transition-property: background-color, border-color, background-image;
+			transition-duration: .2s;
+			transition-timing-function: ease-in-out;
+		}
+
+		&_checked::before {
+			background-color: $color-dark-blue;
+			border-color: $color-dark-blue;
+			background-image: url('data:image/svg+xml, %3Csvg%20version%3D%221.1%22%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%2278.369px%22%20height%3D%2278.369px%22%20viewBox%3D%220%200%2078.369%2078.369%22%20style%3D%22enable-background%3Anew%200%200%2078.369%2078.369%3B%22%0A%09%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%3E%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M78.049%2C19.015L29.458%2C67.606c-0.428%2C0.428-1.121%2C0.428-1.548%2C0L0.32%2C40.015c-0.427-0.426-0.427-1.119%2C0-1.547l6.704-6.704%0A%09%09c0.428-0.427%2C1.121-0.427%2C1.548%2C0l20.113%2C20.112l41.113-41.113c0.429-0.427%2C1.12-0.427%2C1.548%2C0l6.703%2C6.704%0A%09%09C78.477%2C17.894%2C78.477%2C18.586%2C78.049%2C19.015z%22%2F%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A');
+			background-repeat: no-repeat;
+			background-size: 60%;
+			background-position: center;
+		}
+
+		&:hover {
+			color: #5b5e5f;
+		}
+	}
+	&__count {
+		display: inline-block;
+		margin-left: auto;
+		font-weight: 350;
+		font-size: 1.4rem;
+		color: #747778;
+	}
+}

@@ -1,0 +1,80 @@
+.product-card {
+  width: auto !important;
+  height: fit-content;
+  padding: 2.4rem;
+  border-radius: .4rem;
+  border: .1rem solid #EFF1F1;
+  transition-property: box-shadow;
+  transition-duration: 0.4s;
+  &:hover {
+    box-shadow: 1px 1px 16px #0000003d;
+  }
+  &__img-wrapper {
+    background-color: transparent;
+    padding: 2.1rem 2.8rem;
+    border-bottom: none;
+    margin-bottom: 1.6rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__body {
+    padding: 0;
+  }
+  &__title {
+    margin-bottom: 2.4rem;
+    .brand {
+      font-weight: 500;
+      font-size: 1.0rem;
+      color: #5C5F60;
+      margin-bottom: .5rem;
+    }
+    .product-name {
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: #2D3132;
+    }
+  }
+  &__description {
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    .price {
+      &__before-sale {
+        font-weight: 350;
+        font-size: 1.2rem;
+        text-decoration-line: line-through;
+        color: #747778;
+      }
+      &__after-sale {
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: #2D3132;
+      }
+    }
+    .place {
+      .city {
+        span {
+          font-weight: 350;
+          font-size: 1.2rem;
+          color: #2D3132;
+          margin-bottom: 0.4rem;
+          margin-left: 0.4rem;
+        }
+      }
+      .store {
+        span {
+          font-weight: 400;
+          font-size: 1.4rem;
+          color: #2D3132;
+          margin-left: 0.8rem;
+        }
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

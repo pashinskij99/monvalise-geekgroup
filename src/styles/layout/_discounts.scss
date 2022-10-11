@@ -1,0 +1,19 @@
+.discounts {
+  background-color: $background_discounts;
+  padding: .5rem 0;
+  &__title {
+    line-height: 1;
+    &_icon-1 {
+      width: 2rem;
+      height: 2rem;
+    }
+    &_icon-2 {
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+    &__span {
+      font-size: 1.6rem;
+      color: #0F1A34;
+    }
+  }
+}

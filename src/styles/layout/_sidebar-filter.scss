@@ -1,0 +1,53 @@
+.sidebar-filter {
+	min-width: 31.2rem;
+	margin-right: 2.4rem;
+	@include respond(tab-port) {
+		display: none;
+	}
+	&__accordion {
+		position: relative;
+    z-index: 10;
+    overflow: hidden;
+		&:not(:last-child) {
+			margin-bottom: 0.2rem;
+		}
+	}
+	&__item {
+		border: none;
+		&:first-of-type .accordion-button {
+			border-radius: 0;			
+		}
+	}
+	&__header {
+		.accordion-button {
+			font-weight: 350;
+			font-size: 1.4rem;
+			color: #444748;
+			padding: 1.6rem 2.4rem;
+			border: none;
+			outline: none;
+			background-color: #EFF1F1;
+			&::after {
+				border-radius: 0;
+				background-size: 100%;
+				width: 2rem;
+				height: 2rem;
+			}
+			&:not(.collapsed) {
+				background-color: #EFF1F1;
+				color: #444748;
+				box-shadow: none;
+			}
+			&:not(.collapsed)::after {
+				background-image: var(--bs-accordion-btn-icon);
+			}
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+	&__body {
+		border: 1px solid #EFF1F1;
+		padding: 2.4rem;
+	}
+}
