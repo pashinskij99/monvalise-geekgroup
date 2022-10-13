@@ -1,6 +1,6 @@
 .product-card {
+  position: relative;
   width: auto !important;
-  height: fit-content;
   padding: 2.4rem;
   border-radius: .4rem;
   border: .1rem solid #EFF1F1;
@@ -10,11 +10,36 @@
     box-shadow: 1px 1px 16px #0000003d;
   }
   &__img-wrapper {
+    position: relative;
     background-color: transparent;
     padding: 2.1rem 2.8rem;
     border-bottom: none;
     margin-bottom: 1.6rem;
+    .like {
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: background-color 0.3s;
+      &_active {
+        path {
+          fill: red;
+        }
+      }
+    }
+    .top {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #00382F;
+      text-transform: uppercase;
+      background: #B4FFF0;
+      padding: .4rem .8rem;
+      border-radius: 4px;
+    }
     img {
+      cursor: pointer;
       width: 100%;
       height: 100%;
     }
@@ -23,6 +48,7 @@
     padding: 0;
   }
   &__title {
+    cursor: pointer;
     margin-bottom: 2.4rem;
     .brand {
       font-weight: 500;
@@ -72,9 +98,29 @@
           margin-left: 0.8rem;
         }
         img {
+          width: 2rem;
+          height: 2rem;
           border-radius: 50%;
         }
       }
+    }
+  }
+  &__loading {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.1s ease-out;
+    &_active {
+      visibility: visible;
+      opacity: 1;
     }
   }
 }

@@ -29,25 +29,42 @@
 		}
 		&__select-wrapper {
 			position: relative;
-			&::before {
-				content: "";
-				position: absolute;
-				right: 4rem;
-				top: 0;
-				width: .1rem;
-				background-color: $color-white;
-				height: 100%;
-			}
+			// &::before {
+			// 	content: "";
+			// 	position: absolute;
+			// 	right: 4rem;
+			// 	top: 0;
+			// 	width: .1rem;
+			// 	background-color: $color-white;
+			// 	height: 100%;
+			// }
 		}
-		&__select {
-			cursor: pointer;
-			background-color: $color-lighter-gray;
-			border: none;
-			border-radius: 10rem;
-			padding: 0.8rem 3.7rem 0.8rem 1.2rem;
-			color: $color-dark-blue;
-			font-size: 1.2rem;
-			background-position: right 1.2rem center;
+	}
+}
+
+.filter-select {
+	&__input {
+		width: 3rem!important;
+		background: #EFF1F1;
+		border: none;
+		border-radius: 10rem;
+		color: $color-dark-blue;
+		font-size: 1.2rem;
+		padding: .8rem 1.2rem;
+		&:focus {
+			background: #EFF1F1;
+			box-shadow: none;
 		}
+	}
+	&__select {
+		cursor: pointer;
+		background-color: $color-lighter-gray;
+		border: none;
+		border-radius: 10rem;
+		padding: 0.8rem 3.7rem 0.8rem 0.2rem;
+		background-position: right 1.4rem center;
+		flex: none!important;
+		margin-left: .2rem;
+		background-size: 1.6rem 1.2rem;
 	}
 }
