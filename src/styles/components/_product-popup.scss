@@ -1,0 +1,15 @@
+.product-popup {
+	border: none;
+	width: 100%;
+	&__img {}
+	&__body {}
+	&__subtitle {
+		font-size: 1.2rem;
+		font-weight: 500;
+	}
+	&__title {
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+	&__body {}
+}

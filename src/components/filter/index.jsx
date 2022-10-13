@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import { Form } from 'react-bootstrap'
 import SidebarMobile from '../../sections/sidebar-mobile';
 import clsx from "clsx";
+import { FilterSelect } from './filter-select';
 
 export const Filter = () => {
 
@@ -17,12 +17,7 @@ export const Filter = () => {
 			<div className='sort d-flex align-items-center'>
 				<span className='sort__text'>Сортувати за:</span>
 				<div className='sort__select-wrapper'>
-					<Form.Select className='sort__select' aria-label='Default select example'>
-						<option value="1">За замовчуванням</option>
-						<option value="2">Новинки</option>
-						<option value="3">Від дешевих до дорогих</option>
-						<option value="4">Від дорогих до дешевих</option>
-					</Form.Select>
+					<FilterSelect />
 				</div>
 			</div>
 		</div>

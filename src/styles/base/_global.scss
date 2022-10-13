@@ -46,4 +46,7 @@ body {
   @include respond(screen) {
     max-width: 1320px!important;
   }
+  @include respond(big-screen) {
+    max-width: 1650px!important;
+  }
 }

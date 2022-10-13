@@ -1,0 +1,33 @@
+.like-popup {
+	&__list {}
+	&__list-item {
+		text-align: start;
+		border: none;
+		cursor: pointer;
+		border-radius: .3rem!important;
+		transition:background-color 0.3s ease-in-out;
+		&:hover {
+			background-color: rgba($color-black, 0.2);
+		}
+	}
+	&__image {
+		width: 5rem;
+		height: 5rem;
+	}
+	&__title {}
+	&__brand {
+		font-weight: 500;
+		font-size: 1rem;
+		color: #5C5F60;
+	}
+	&__name {
+		font-weight: 400;
+		font-size: 1.4rem;
+		color: #2D3132;
+	}
+	&__price {
+		font-weight: 500;
+		font-size: 1.4rem;
+		color: #2D3132;
+	}
+}

@@ -74,11 +74,11 @@ const InputPriceRange = ({ min, max }) => {
           <div className="slider__inputs-value">
             <label className='slider__inputs-label' htmlFor="minval">
               <span className='slider__inputs-text'>Від</span>
-              <input className='slider__input' name='minval' defaultValue={minVal} />
+              <input className='slider__input' name='minval' readOnly value={minVal} />
             </label>
             <label className='slider__inputs-label margin-left-20px' htmlFor="minval">
               <span className='slider__inputs-text'>До</span>
-              <input className='slider__input' name='maxval' defaultValue={maxVal} />
+              <input className='slider__input' name='maxval' readOnly value={maxVal} />
             </label>
           </div>
         </div>
